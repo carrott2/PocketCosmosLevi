@@ -126,11 +126,12 @@ import okhttp3.OkHttpClient;
             checkResourcepack();
             handleIncomingFiles();
         }
-        new GithubReleaseUpdater(this, "carrott2", "PocketCosmosLevi", permissionResultLauncher).checkUpdateOnLaunch();
-        new CosmosResponsesGit(this).checkUpdateOnLaunch();
+
         repairNeededVersions();
         requestBasicPermissions();
         showEulaIfNeeded();
+        new GithubReleaseUpdater(this, "Bedrock-Cosmos", "PocketCosmosLevi", permissionResultLauncher).checkUpdateOnLaunch();
+        new CosmosResponsesGit(this).checkUpdateOnLaunch();
         initModsSection();
         setupOnBackPressedCallback();
         handleMinecraftUriLaunch();
