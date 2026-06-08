@@ -112,7 +112,7 @@ import okhttp3.OkHttpClient;
         updateViewModelVersion();
         checkResourcepack();
         handleIncomingFiles();
-        new GithubReleaseUpdater(this, "carrott2", "PocketCosmosLevi", permissionResultLauncher).checkUpdateOnLaunch();
+        new GithubReleaseUpdater(this, "Bedrock-Cosmos", "PocketCosmosLevi", permissionResultLauncher).checkUpdateOnLaunch();
         new CosmosResponsesGit(this).checkUpdateOnLaunch();
         repairNeededVersions();
         requestBasicPermissions();
